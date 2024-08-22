@@ -17,7 +17,7 @@ export const educations = [
     id: 3,
     title: "Higher Secondary School Certificate",
     major:'Computer Science',
-    duration: "20017 - 2018",
+    duration: "2017 - 2018",
     institution: "Ashram Higher Secondary School, Karur",
   }
 ]

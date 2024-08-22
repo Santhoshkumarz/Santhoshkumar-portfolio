@@ -2,7 +2,11 @@ export const personalData = {
   name: "SANTHOSH KUMAR",
   profile: '/profile.jpeg',
   designation: "Software Developer",
-  description: "My name is SANTHOSH KUMAR. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+  description: `
+    Hi, I'm Santhosh Kumar. I’m a passionate and enthusiastic software developer with over a year of experience at Genpixels Tech Pvt Ltd in Coimbatore.<br /><br />
+    I’m a quick learner who thrives on tackling new challenges and solving problems. My main expertise is in JavaScript, and I love using it to build and explore new technologies and web development stacks.<br /><br />
+    I'm always eager to learn and grow, and I'm open to exciting job opportunities that align with my skills and interests.
+  `,
   email: 'id.santhoshk@gmail.com',
   phone: '+91 9514691027',
   address: 'No.15 Sp nagar Rto office oppsite, Emur Road, Thanthonimalai Karur- 639007',
@@ -13,5 +17,5 @@ export const personalData = {
   stackOverflow: '#',
   leetcode: "#",
   devUsername: "#",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1pmKx7SDU0nF7pQJtdPNd8rKiWW931Wyb/view?usp=drive_link"
 }
