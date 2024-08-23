@@ -1,6 +1,4 @@
-<p align="center" width="100%">
-    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
-</p>
+
 
 ---
 # [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
@@ -13,11 +11,9 @@
 
 ---
 
-# Demo :movie_camera:
+# Demo 🎥
 
-![](./public/image/screen.png)
-
-## View live preview [here](https://abusaid.netlify.app/).
+## View live preview [here](https://www.santhoshkumar-portfolio.com/).
 
 ---
 
@@ -47,17 +43,6 @@
 
 # Installation :arrow_down:
 
-### You will need to download Git and Node to run this project
-
-- [Git](https://git-scm.com/downloads)
-- [Node](https://nodejs.org/en/download/)
-
-#### Make sure you have the latest version of both Git and Node on your computer.
-
-```
-node --version
-git --version
-```
 
 ## <br />
 
