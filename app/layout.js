@@ -18,6 +18,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="Keywords" content="portfolio,my portfolio,select portfolio,portfolio website,portfolio examples"></meta>
+        <meta name="Description" content="Hi, I'm Santhosh Kumar. I’m a passionate and enthusiastic software developer with over a year of experience at Genpixels Tech Pvt Ltd in Coimbatore.<br /><br />
+    I’m a quick learner who thrives on tackling new challenges and solving problems..."></meta>
+        <title>Santhoshkumar Portfolio</title>
+      </head>
       <body className={inter.className}>
         <ToastContainer />
         <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
