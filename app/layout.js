@@ -19,10 +19,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="Keywords" content="portfolio,my portfolio,select portfolio,portfolio website,portfolio examples"></meta>
-        <meta name="Description" content="Hi, I'm Santhosh Kumar. I’m a passionate and enthusiastic software developer with over a year of experience at Genpixels Tech Pvt Ltd in Coimbatore.<br /><br />
-    I’m a quick learner who thrives on tackling new challenges and solving problems..."></meta>
-        <title>Santhoshkumar Portfolio</title>
+        <meta name="title" content="Santhoshkumar Portfolio"></meta>
+        <meta
+          name="description"
+          content="Hi, I&#039;m Santhosh Kumar. I’m a passionate and enthusiastic software developer with over a year of experience at Genpixels Tech Pvt Ltd in Coimbatore.&lt;br /&gt;&lt;br /&gt;    I’m a quick learner who thrives on tackling new challenges and solving problems..."
+        ></meta>
+        <meta
+          name="keywords"
+          content="portfolio,my portfolio,select portfolio,portfolio website,portfolio examples"
+        ></meta>
+        <meta name="robots" content="index, follow"></meta>
+        <meta
+          http-equiv="Content-Type"
+          content="text/html; charset=utf-8"
+        ></meta>
+        <meta name="language" content="English"></meta>
       </head>
       <body className={inter.className}>
         <ToastContainer />
