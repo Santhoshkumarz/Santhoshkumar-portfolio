@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         ></meta>
         <meta name="robots" content="index, follow"></meta>
         <meta
-          http-equiv="Content-Type"
+          httpEquiv="Content-Type"
           content="text/html; charset=utf-8"
         ></meta>
         <meta name="language" content="English"></meta>
