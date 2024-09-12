@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
@@ -13,7 +13,6 @@ import ScrollToTop from "./components/helper/scroll-to-top";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://www.googletagmanager.com/gtag/js?id=G-TJ9ZPM3JKH";
@@ -31,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Santhoshkumar Portfolio</title>
+        <title>Santhoshkumar personal porfolio</title>
         <meta
           name="description"
           content="Hi, I&#039;m Santhosh Kumar. I’m a passionate and enthusiastic software developer with over a year of experience at Genpixels Tech Pvt Ltd in Coimbatore.&lt;br /&gt;&lt;br /&gt;    I’m a quick learner who thrives on tackling new challenges and solving problems..."
@@ -45,6 +44,21 @@ export default function RootLayout({ children }) {
           httpEquiv="Content-Type"
           content="text/html; charset=utf-8"
         ></meta>
+        {/* open graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Santhoshkumar Portfolio" />
+        <meta
+          property="og:url"
+          content="https://www.santhoshkumar-portfolio.com/"
+        />
+        <meta
+          property="og:image"
+          content="https://www.santhoshkumar-portfolio.com/_next/image?url=%2Fprofile.jpeg&w=640&q=75"
+        />
+        <meta
+          property="og:description"
+          content="Hi, I'm Santhoshkumar do you want to know about my professional career"
+        />
         <meta name="language" content="English"></meta>
       </head>
       <body className={inter.className}>
