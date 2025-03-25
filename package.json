@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "autoprefixer": "latest",
-    "eslint": "latest",
+    "eslint": "^9.23.0",
     "eslint-config-next": "latest",
     "postcss": "latest",
     "sass": "^1.69.5",
