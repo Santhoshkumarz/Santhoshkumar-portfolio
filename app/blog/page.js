@@ -3,22 +3,21 @@ import { useState, useEffect } from "react";
 import { certificateData } from "../../utils/data/certificates";
 import BlogCard from "../components/homepage/blog/blog-card";
 
-function page() {
+function Page() {
   const [certificates, setCertificates] = useState([]);
 
   useEffect(() => {
-
     setCertificates(certificateData);
   }, []);
   return (
     <div className="py-8">
       <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-2xl rounded-md">
-            ALL Certificate
+        <div className="flex items-center">
+          <span className="w-12 sm:w-24 h-[2px] bg-gradient-to-r from-transparent to-violet-400"></span>
+          <span className="mx-1 w-fit rounded-md bg-gradient-to-r from-violet-600 to-pink-500 px-5 py-2 text-2xl font-semibold text-white shadow-md shadow-violet-200">
+            All Certificates
           </span>
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          <span className="w-12 sm:w-24 h-[2px] bg-gradient-to-l from-transparent to-pink-400"></span>
         </div>
       </div>
 
@@ -34,4 +33,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

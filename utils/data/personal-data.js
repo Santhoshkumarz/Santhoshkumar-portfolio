@@ -1,14 +1,14 @@
 export const personalData = {
-  name: "SANTHOSH KUMAR",
+  name: "SANTHOSH KUMAR M",
   profile: '/profile.jpeg',
-  designation: "Software Developer",
+  designation: "Full Stack & AI Engineer",
   description: `
-    Hi, I'm Santhosh Kumar. I’m a passionate and enthusiastic software developer with over a year of experience at Genpixels Tech Pvt Ltd in Coimbatore.<br /><br />
-    I’m a quick learner who thrives on tackling new challenges and solving problems. My main expertise is in JavaScript, and I love using it to build and explore new technologies and web development stacks.<br /><br />
-    I'm always eager to learn and grow, and I'm open to exciting job opportunities that align with my skills and interests.
+    Hi, I'm Santhosh Kumar — a Full Stack & AI Engineer with 3+ years of experience building scalable, high-performance web applications across the frontend and backend.<br /><br />
+    I now specialize in AI-powered features such as intelligent chatbots built on Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), backed by vector search with pgvector. I work fluently across React, Next.js, Node.js, Python and the AWS cloud, and I've led development teams to ship reliable, production-ready solutions.<br /><br />
+    I love turning complex problems into clean, intuitive products — and I'm always eager to take on new challenges in fast-paced, dynamic environments.
   `,
   email: 'id.santhoshk@gmail.com',
-  phone: '+91 9514691027',
+  phone: '+91 87540 63914',
   address: 'No.15 Sp nagar Rto office oppsite, Emur Road, Thanthonimalai Karur- 639007',
   github: 'https://github.com/Santhoshkumarz',
   facebook: '#',
@@ -17,5 +17,5 @@ export const personalData = {
   stackOverflow: '#',
   leetcode: "#",
   devUsername: "#",
-  resume: "https://drive.google.com/file/d/1pmKx7SDU0nF7pQJtdPNd8rKiWW931Wyb/view?usp=drive_link"
+  resume: "https://drive.google.com/file/d/1RTinFkvhBPOmWNSN6M8Y549LyZcB9oiw/view?usp=sharing"
 }

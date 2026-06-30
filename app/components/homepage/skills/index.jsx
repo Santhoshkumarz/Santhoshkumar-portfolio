@@ -1,71 +1,63 @@
-// @flow strict
+"use client";
 
-import { skillsData } from "@/utils/data/skills";
-import { skillsImage } from "@/utils/skill-image";
-import Image from "next/image";
-import Marquee from "react-fast-marquee";
+import { skillCategories } from "@/utils/data/skills";
+import { motion } from "framer-motion";
+import { HiSparkles } from "react-icons/hi2";
+import { TbDeviceDesktopCode, TbServer2, TbDatabase, TbCloud, TbTools } from "react-icons/tb";
+import SectionTitle from "../../helper/section-title";
+import { StaggerGroup, StaggerItem } from "../../helper/motion-wrapper";
+
+const categoryIcon = {
+  ai: HiSparkles,
+  frontend: TbDeviceDesktopCode,
+  backend: TbServer2,
+  database: TbDatabase,
+  cloud: TbCloud,
+  tools: TbTools,
+};
 
 function Skills() {
   return (
-    <div id="skills" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
-      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
+    <div
+      id="skills"
+      className="relative z-10 border-t my-12 lg:my-24 border-[#25213b] scroll-mt-24"
+    >
+      <SectionTitle>Skills</SectionTitle>
 
-      <div className="flex justify-center -translate-y-[1px]">
-        <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
-        </div>
-      </div>
-
-      <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Skills
-          </span>
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-        </div>
-      </div>
-
-      <div className="w-full my-12">
-        <Marquee
-          gradient={false}
-          speed={80}
-          pauseOnHover={true}
-          pauseOnClick={true}
-          delay={0}
-          play={true}
-          direction="left"
-        >
-          {skillsData.map((skill, id) => (
-            <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
-              key={id}>
-              <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                <div className="flex -translate-y-[1px] justify-center">
-                  <div className="w-3/4">
-                    <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
-                  </div>
+      <StaggerGroup className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {skillCategories.map((category) => {
+          const Icon = categoryIcon[category.icon] || TbTools;
+          return (
+            <StaggerItem key={category.id}>
+              <motion.div
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="glass glow-border h-full rounded-2xl p-6"
+              >
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-violet-100 to-pink-100 text-xl text-violet-600">
+                    <Icon />
+                  </span>
+                  <h3 className="text-lg font-semibold text-[#1e2235]">{category.title}</h3>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-3 p-6">
-                  <div className="h-8 sm:h-10">
-                    <Image
-                      src={skillsImage(skill)?.src}
-                      alt={skill}
-                      width={40}
-                      height={40}
-                      className="h-full w-auto rounded-lg"
-                    />
-                  </div>
-                  <p className="text-white text-sm sm:text-lg">
-                    {skill}
-                  </p>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <motion.span
+                      key={skill}
+                      whileHover={{ scale: 1.06 }}
+                      className="cursor-default rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs sm:text-sm text-gray-700 transition-colors duration-300 hover:border-violet-400 hover:bg-violet-50 hover:text-violet-700"
+                    >
+                      {skill}
+                    </motion.span>
+                  ))}
                 </div>
-              </div>
-            </div>
-          ))}
-        </Marquee>
-      </div>
+              </motion.div>
+            </StaggerItem>
+          );
+        })}
+      </StaggerGroup>
     </div>
   );
-};
+}
 
 export default Skills;

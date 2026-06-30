@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import "./css/card.scss";
 import "./css/globals.scss";
 import ScrollToTop from "./components/helper/scroll-to-top";
+import AnimatedBackground from "./components/helper/animated-background";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,10 +31,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Santhoshkumar personal porfolio</title>
+        <title>Santhosh Kumar M — Full Stack & AI Engineer</title>
         <meta
           name="description"
-          content="Hi, I&#039;m Santhosh Kumar. I’m a passionate and enthusiastic software developer with over a year of experience at Genpixels Tech Pvt Ltd in Coimbatore.&lt;br /&gt;&lt;br /&gt;    I’m a quick learner who thrives on tackling new challenges and solving problems..."
+          content="Santhosh Kumar M — Full Stack & AI Engineer with 3+ years of experience building scalable web apps and AI-powered features (LLMs, RAG, vector search) using React, Next.js, Node.js, Python and AWS."
         ></meta>
         <meta
           name="keywords"
@@ -62,8 +63,9 @@ export default function RootLayout({ children }) {
         <meta name="language" content="English"></meta>
       </head>
       <body className={inter.className}>
+        <AnimatedBackground />
         <ToastContainer />
-        <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+        <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-[#1e2235]">
           <Navbar />
           {children}
           <ScrollToTop />
